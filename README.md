@@ -1,6 +1,8 @@
 # mingz
 
-Check the browserified+minified+gzipped size of any npm module. Just add this to your `~/.bash_profile`:
+Check the browserified+minified+gzipped size of any npm module.
+
+Just add this to your `~/.bash_profile`:
 
 ```bash
 function mingz () { curl -sL wzrd.in/standalone/"$1"|uglifyjs -mc 2>/dev/null|gzip -c|wc -c;}
